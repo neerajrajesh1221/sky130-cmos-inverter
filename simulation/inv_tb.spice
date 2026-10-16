@@ -1,0 +1,35 @@
+** sch_path: /home/lenovo/vlsi-work/analog/cmos_inverter/inv_tb.sch
+**.subckt inv_tb
+x1 VDD A Y 0 inv
+v0 VDD 0 1.8
+v1 A 0 0
+**** begin user architecture code
+
+
+.param mc_mm_switch=0
+.lib /home/lenovo/.volare/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.control
+dc v1 0 1.8 0.01
+meas dc vm when v(y)=v(a)
+plot v(y) vs v(a)
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  inv.sym # of pins=4
+** sym_path: /home/lenovo/vlsi-work/analog/cmos_inverter/inv.sym
+** sch_path: /home/lenovo/vlsi-work/analog/cmos_inverter/inv.sch
+.subckt inv VDD A Y GND
+*.iopin VDD
+*.iopin GND
+*.ipin A
+*.opin Y
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1
+XM2 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1
+.ends
+
+.end

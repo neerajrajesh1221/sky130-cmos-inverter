@@ -1,0 +1,112 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1791903189
+<< nwell >>
+rect 60 436 286 500
+rect -42 210 316 436
+<< nmos >>
+rect 158 40 188 140
+<< pmos >>
+rect 158 260 188 460
+<< ndiff >>
+rect 100 125 158 140
+rect 66 111 158 125
+rect 66 69 78 111
+rect 112 69 158 111
+rect 66 55 158 69
+rect 100 40 158 55
+rect 188 127 246 140
+rect 188 111 306 127
+rect 188 77 208 111
+rect 242 77 306 111
+rect 188 61 306 77
+rect 188 40 246 61
+<< pdiff >>
+rect 100 397 158 460
+rect 70 381 158 397
+rect 70 347 104 381
+rect 138 347 158 381
+rect 70 331 158 347
+rect 100 260 158 331
+rect 188 399 246 460
+rect 188 383 276 399
+rect 188 349 208 383
+rect 242 349 276 383
+rect 188 333 276 349
+rect 188 260 246 333
+<< ndiffc >>
+rect 78 69 112 111
+rect 208 77 242 111
+<< pdiffc >>
+rect 104 347 138 381
+rect 208 349 242 383
+<< psubdiff >>
+rect -40 107 66 125
+rect -40 73 0 107
+rect 34 73 66 107
+rect -40 55 66 73
+<< nsubdiff >>
+rect -2 369 70 397
+rect -2 335 24 369
+rect 58 335 70 369
+rect -2 331 70 335
+<< psubdiffcont >>
+rect 0 73 34 107
+<< nsubdiffcont >>
+rect 24 335 58 369
+<< poly >>
+rect 158 460 188 500
+rect 158 140 188 260
+rect 158 10 188 40
+<< locali >>
+rect 86 387 156 399
+rect 6 381 156 387
+rect 6 369 104 381
+rect 6 335 24 369
+rect 58 347 104 369
+rect 138 347 156 381
+rect 58 335 156 347
+rect 6 329 156 335
+rect 190 383 260 401
+rect 190 349 208 383
+rect 242 349 260 383
+rect 190 331 260 349
+rect 6 317 96 329
+rect 200 130 260 331
+rect -20 107 40 125
+rect -20 73 0 107
+rect 34 73 40 107
+rect -20 55 40 73
+rect 78 111 112 127
+rect 78 53 112 69
+rect 200 111 270 130
+rect 200 77 208 111
+rect 242 77 270 111
+rect 200 57 270 77
+<< viali >>
+rect 104 347 138 381
+rect 0 73 34 107
+rect 78 69 112 103
+<< metal1 >>
+rect 30 381 316 393
+rect 30 347 104 381
+rect 138 347 316 381
+rect 30 335 316 347
+rect -20 107 316 115
+rect -20 73 0 107
+rect 34 103 316 107
+rect 34 73 78 103
+rect -20 69 78 73
+rect 112 69 316 103
+rect -20 57 316 69
+<< labels >>
+rlabel metal1 260 364 260 364 0 VDD
+port 1 nsew
+rlabel metal1 260 86 260 86 0 GND
+port 2 nsew
+rlabel poly 173 200 173 200 0 A
+port 3 nsew
+rlabel locali 230 230 230 230 0 Y
+port 4 nsew
+<< end >>

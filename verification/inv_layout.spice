@@ -1,0 +1,7 @@
+* NGSPICE file created from inv_layout.ext - technology: sky130A
+
+.subckt inv_layout VDD GND A Y
+X0 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0.3395 pd=2.88 as=0.3395 ps=2.88 w=1 l=0.15
+X1 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0.244 pd=2.18 as=0.2045 ps=1.92 w=0.5 l=0.15
+.ends
+
